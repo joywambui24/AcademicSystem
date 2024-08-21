@@ -23,8 +23,10 @@ public class Course {
     @Column (name="location")
     private String location;
 
-    public Course(long id, String courseCode, String courseName, String credits, String location) {
-        this.id = id;
+    public Course() {
+    }
+
+    public Course(String courseCode, String courseName, String credits, String location) {
         this.courseCode = courseCode;
         this.courseName = courseName;
         this.credits = credits;
