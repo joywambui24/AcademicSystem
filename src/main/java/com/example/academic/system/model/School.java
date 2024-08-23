@@ -6,7 +6,7 @@ import lombok.Data;
 
 @Data
 @Entity
-@Table(name="Course")
+@Table(name="School")
 public class School {
 
     @Id
@@ -25,11 +25,16 @@ public class School {
     @Column(name = "campusType")
     private String campusType;
 
+    public School() {
+    }
+
     public School(String schoolName, String address, String city, String campusType) {
-        this.id = id;
         this.schoolName = schoolName;
         this.address = address;
         this.city = city;
         this.campusType = campusType;
     }
-}
+
+
+
+   }

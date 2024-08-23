@@ -1,14 +1,15 @@
-//package com.example.academic.system.model;
-//
-//import lombok.Data;
-//
-//@Data
-//public class StudentDto {
-//    public String stuName;
-//    public String course;
-//    public String department;
-//    public String campusType;
-//    public Integer year;
-//
-//
-//}
+package com.example.academic.system.model;
+
+import lombok.Data;
+
+
+@Data
+public class StudentDto {
+    public String stuName;
+    public String department;
+    public String course;
+    public String year;
+    public String campusType;
+
+
+}
